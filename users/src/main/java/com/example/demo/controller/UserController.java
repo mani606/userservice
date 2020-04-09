@@ -32,7 +32,7 @@ public class UserController {
 	@GetMapping("")
 	public String getUserOrders() {
 
-		final String uri = "http://localhost:8090/demo/orders";
+		final String uri = "http://order-service/demo/orders";
 		String result = restTemplate.getForObject(uri, String.class);
 		return result;
 
